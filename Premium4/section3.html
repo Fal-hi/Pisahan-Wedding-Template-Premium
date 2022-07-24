@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Section 3 Pengantin Pernikahan</title>
+    <link
+      rel="shortcut icon"
+      href="favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+  </head>
+  <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Alegreya", sans-serif;
+      }
+
+      :root {
+        --font-besar: #362222;
+        --font-sedang: #171010;
+        --font-kecil: #7e7979;
+        --warna-header: linear-gradient(
+          90deg,
+          #fffef7 42.47%,
+          #d1e0da 65.68%,
+          #9dbeb9 100%
+        );
+        --warna-body: linear-gradient(
+          112.68deg,
+          rgba(247, 198, 160, 0.2) 0%,
+          rgba(233, 197, 164, 0.577584) 37.48%,
+          rgba(220, 196, 168, 0.651302) 46.41%,
+          rgba(157, 190, 185, 0.2) 77.14%
+        );
+        --warna-button: linear-gradient(90deg, #f7c6a0 0%, #9dbeb9 100%);
+        --shadow-button: 2px 2px 2px var(--font-kecil);
+        --shadow-text: 3px 3px 4px var(--font-kecil);
+        --lengkung: 1rem;
+        --lengkungO: 999px;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      .pengantin {
+        padding-top: 5rem;
+        background: var(--warna-body) !important;
+      }
+
+      .pengantin h1.judul {
+        font-style: italic;
+        text-align: center;
+        text-shadow: 3px 3px 4px var(--font-kecil);
+      }
+
+      .pengantin img.garis-atas {
+        max-width: 70%;
+      }
+
+      .pengantin .pria {
+        margin-top: 15rem;
+      }
+
+      .pengantin .pria img.bunga-ms {
+        position: absolute;
+        top: 15rem;
+        right: 0;
+        width: 20%;
+      }
+
+      .pengantin .wanita {
+        margin-top: 25rem;
+        padding-bottom: 10rem;
+      }
+
+      .pengantin .wanita img.bunga-ms {
+        position: absolute;
+        top: 65rem;
+        left: 0;
+        width: 20%;
+        transform: rotate(180deg);
+      }
+
+      .pengantin img.foto-pria,
+      .pengantin img.foto-wanita {
+        max-width: 70%;
+        height: auto;
+        border-radius: 100px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+        filter: drop-shadow(3px 3px 4px var(--font-kecil));
+        -webkit-filter: drop-shadow(3px 3px 4px var(--font-kecil));
+      }
+
+      .pengantin .pria .nama,
+      .pengantin .wanita .nama {
+        margin-top: 5rem;
+        text-align: center;
+      }
+
+      .pengantin .pria .nama h1,
+      .pengantin .wanita .nama h1 {
+        color: var(--font-besar);
+        font-style: italic;
+        text-shadow: 3px 3px 4px var(--font-kecil);
+      }
+
+      .pengantin .pria .nama span,
+      .pengantin .wanita .nama span {
+        color: var(--font-kecil);
+      }
+
+      .pengantin .pria .nama h5,
+      .pengantin .wanita .nama h5 {
+        color: var(--font-sedang);
+      }
+      @media (min-width: 992px) and (max-width: 1199.98px) {
+        .pengantin .wanita img.bunga-ms {
+          top: 50rem;
+        }
+        .pengantin .pria {
+          margin-top: 10rem;
+        }
+        .pengantin .wanita {
+          margin-top: 15rem;
+        }
+      }
+      @media (min-width: 768px) and (max-width: 991.98px) {
+        .pengantin .pria {
+          margin-top: 5rem;
+        }
+        .pengantin .pria img.bunga-ms {
+          top: 10rem;
+          width: 25%;
+        }
+        .pengantin .wanita img.bunga-ms {
+          top: 40rem;
+          width: 25%;
+        }
+        .pengantin .pria .nama,
+        .pengantin .wanita .nama {
+          margin-top: 2rem;
+        }
+        .pengantin .wanita {
+          margin-top: 15rem;
+        }
+      }
+      @media (max-width: 575.98px) {
+        .pengantin {
+          margin-top: 0;
+        }
+        .pengantin .pria {
+          margin-top: 3rem;
+        }
+        .pengantin .pria img.bunga-ms {
+          top: 8rem;
+          width: 35%;
+        }
+        .pengantin .wanita img.bunga-ms {
+          top: 37rem;
+          width: 35%;
+        }
+        .pengantin img.foto-pria,
+        .pengantin img.foto-wanita {
+          max-width: 40%;
+        }
+        .pengantin .pria .nama,
+        .pengantin .wanita .nama {
+          margin-top: 1rem;
+        }
+        .pengantin .wanita {
+          margin-top: 4rem;
+        }
+        .pengantin .wanita {
+          padding-bottom: 5rem;
+        }
+      }
+  </style>
+  <body>
+    <!-- Pengantin -->
+    <div class="pengantin" id="pengantin">
+      <div class="container">
+          <h1 class="judul">Calon Pengantin</h1>
+          <div class="d-flex justify-content-center align-items-center">
+            <img
+              src="garis-atas.png"
+              class="garis-atas"
+              alt=""
+            />
+          </div>
+          <!-- Pria -->
+          <div class="row pria">
+            <img src="bunga-ms.png" class="img-fluid bunga-ms">
+            <div
+              class="col-lg-5 col-md-5 foto d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="pria.jpg"
+                class="foto-pria"
+                alt="Pengantin Pria"
+              />
+            </div>
+            <div class="col-lg-5 col-md-5 nama">
+              <h1 class="mb-4">Kelvin Panjaitan S.Kom</h1>
+              <span>Putra Pertama Dari</span>
+              <h5 class="mt-4">Dr. Ayahanda Panjaitan, M.Pd</h5>
+              <h5>Dr. Ibunda Panjaitan, M.Pd</h5>
+            </div>
+          </div>
+          <!-- Wanita -->
+          <div class="row flex-row-reverse wanita">
+            <img src="bunga-ms.png" class="img-fluid bunga-ms">
+            <div
+              class="col-lg-5 col-md-5 foto d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="wanita.jpg"
+                class="foto-wanita"
+                alt="Pengantin Wanita"
+              />
+            </div>
+            <div class="col-lg-5 col-md-5 nama">
+              <h1 class="mb-4">Citra Swalayan S.Kom</h1>
+              <span>Putri Pertama Dari</span>
+              <h5 class="mt-4">Dr. Ayahanda Samawa, M.Pd</h5>
+              <h5>Dr. Ibunda Warahmah, M.Pd</h5>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  </html>

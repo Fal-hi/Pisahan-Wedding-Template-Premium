@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Section 1 Header Pernikahan</title>
+    <link
+      rel="shortcut icon"
+      href="favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&family=El+Messiri&display=swap" rel="stylesheet">
+  </head>
+  <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "El Messiri", sans-serif;
+      }
+
+      :root {
+        --warna1: #32502e;
+        --warna2: #406343;
+        --warna3: #ece7b4;
+        --warna4: #f3efcc;
+        --lengkung: 1rem;
+        --lengkungO: 999px;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      ul.navbar-bawah {
+        list-style: none;
+        position: fixed;
+        bottom: 20px;
+        left: 49.5%;
+        width: 90%;
+        padding-left: 0;
+        background: var(--warna3);
+        z-index: 11;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        border-radius: var(--lengkungO);
+        -webkit-border-radius: var(--lengkungO);
+        -moz-border-radius: var(--lengkungO);
+        -ms-border-radius: var(--lengkungO);
+        -o-border-radius: var(--lengkungO);
+      }
+
+      ul.navbar-bawah li {
+        padding: 10px 10px 0 10px;
+        border-radius: var(--lengkungO);
+        -webkit-border-radius: var(--lengkungO);
+        -moz-border-radius: var(--lengkungO);
+        -ms-border-radius: var(--lengkungO);
+        -o-border-radius: var(--lengkungO);
+        transition: 0.1s;
+        -webkit-transition: 0.1s;
+        -moz-transition: 0.1s;
+        -ms-transition: 0.1s;
+        -o-transition: 0.1s;
+      }
+
+      ul.navbar-bawah li:hover {
+        padding: 5px 13px;
+        background: var(--warna1);
+      }
+
+      ul.navbar-bawah li a {
+        color: var(--warna1);
+        font-size: 2rem;
+      }
+
+      ul.navbar-bawah li a:hover {
+        color: var(--warna3);
+      }
+
+      /* ? Music */
+      .tombol-musik {
+        position: fixed;
+        bottom: 100px;
+        right: 70px;
+        z-index: 9999;
+        background: var(--warna3);
+        cursor: pointer;
+        padding: 6px 10px 0 13px;
+        border-radius: var(--lengkungO);
+        -webkit-border-radius: var(--lengkungO);
+        -moz-border-radius: var(--lengkungO);
+        -ms-border-radius: var(--lengkungO);
+        -o-border-radius: var(--lengkungO);
+      }
+
+      .tombol-musik i {
+        color: var(--warna1);
+        font-size: 30px;
+      }
+
+      /* ? Header */
+      .header {
+        height: 100vh;
+      }
+
+      .header .foto-mempelai {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .header .foto-mempelai img {
+        /* margin-top: 5rem; */
+        max-width: 50%;
+        height: auto;
+        border-radius: var(--lengkung);
+        -webkit-border-radius: var(--lengkung);
+        -moz-border-radius: var(--lengkung);
+        -ms-border-radius: var(--lengkung);
+        -o-border-radius: var(--lengkung);
+      }
+
+      .header .nama-mempelai {
+        height: 100vh;
+        background: var(--warna3);
+      }
+
+      .header .nama-mempelai img.bunga1 {
+        max-width: 25%;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+      .header .nama-mempelai {
+        color: var(--warna1);
+      }
+
+      .header .nama-mempelai .nama {
+        margin-top: 15rem;
+        text-align: center;
+      }
+
+      .header .nama-mempelai .nama h1 {
+        font-family: "Carattere", cursive;
+        font-size: 3rem;
+        font-weight: bold;
+      }
+
+      .header .nama-mempelai p {
+        text-align: center;
+        margin-top: 2rem;
+        font-size: 1.5rem;
+      }
+      @media (min-width: 992px) and (max-width: 1199.98px) {
+        .header .nama-mempelai .nama {
+          margin-top: 12rem;
+          text-align: center;
+        }
+        .header .nama-mempelai p {
+          font-size: 1.2rem;
+        }
+      }
+      @media (min-width: 768px) and (max-width: 991.98px) {
+        .tombol-musik {
+          bottom: 100px;
+          right: 45px;
+        }
+        .header {
+          max-height: 74vh;
+          overflow: hidden;
+        }
+        .header .nama-mempelai img.bunga1 {
+          max-width: 35%;
+        }
+        .header .foto-mempelai img {
+          margin-top: -20rem;
+          max-width: 80%;
+        }
+      }
+      @media (max-width: 575.98px) {
+        .tombol-musik {
+          bottom: 90px;
+          right: 20px;
+          padding: 5px 10px 0 10px;
+        }
+        .header .nama-mempelai img.bunga1 {
+          max-width: 50%;
+        }
+        .header .foto-mempelai {
+          max-height: 55vh;
+        }
+        .header .foto-mempelai img {
+          max-width: 75%;
+          margin-top: 17rem;
+          z-index: 2;
+        }
+        .header .nama-mempelai {
+          height: 55vh;
+        }
+        .header .nama-mempelai .nama {
+          margin-top: 9rem;
+        }
+        .header .nama-mempelai p {
+          font-size: 1rem;
+        }
+      }
+  </style>
+  <body>
+    <!-- Navbar Bawah -->
+    <ul class="navbar-bawah d-flex justify-content-around m-0">
+      <li>
+        <a href="#header">
+          <i class="bi bi-envelope-heart"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#pengantin">
+          <i class="bi bi-people-fill"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#gallery">
+          <i class="bi bi-images"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#acara">
+          <i class="bi bi-calendar2-event"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#kartu">
+          <i class="bi bi-envelope-paper-heart-fill"></i>
+        </a>
+      </li>
+    </ul>
+
+    <!-- Music -->
+    <div class="tombol-musik">
+      <audio id="track" src="Sezairi-It's_You.mp3"></audio>
+      <i id="play-pause" class="bi bi-play-fill"> </i>
+    </div>
+
+    <div class="header" id="header">
+      <div class="row mx-auto">
+        <div class="col-lg-6 col-md-6 foto-mempelai" style="background: url('bg1.png'); background-size: cover; background-repeat: no-repeat;">
+          <img src="mempelai.jpg" alt="Mempelai">
+        </div>
+        <div class="col-lg-6 col-md-6 nama-mempelai">
+          <img src="bunga1.png" class="bunga1" alt="">
+          <div class="nama">
+            <h1>Def Khairul Anhar</h1>
+            <h1>&</h1>
+            <h1>Andine Salsabila</h1>
+          </div>
+          <p>
+            Atas karunia Allah SWT izinkan Kami mengundang sekaligus mengharapkan doa restu dari bapak/ibu dalam acara pernikahan putra & putri kami.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      // Musik
+      const track = document.getElementById('track');
+      const button = document.getElementById('play-pause');
+
+      function playPause() {
+          if(track.paused) {
+              track.play();
+              button.className = "bi-pause-fill";
+          } else {
+              track.pause();
+              button.className = "bi-play-fill";
+          }
+      }
+      // Button Music
+      button.addEventListener('click', playPause);
+      track.addEventListener('ended', function() {
+          button.className = "bi-play-fill";
+      });
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  </html>

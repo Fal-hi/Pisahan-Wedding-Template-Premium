@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Section 3 Pengantin Pernikahan</title>
+    <link
+      rel="shortcut icon"
+      href="favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Petrona&display=swap" rel="stylesheet">
+  </head>
+  <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Petrona", serif;
+      }
+
+      :root {
+        --hijau: #012800;
+        --hijau-muda: #ebfdeb;
+        --putih: #fff;
+        --abu-abu: #828282;
+        --abu-abu2: #bdbdbd;
+        --font-hijau: #012800;
+        --font-kuning: #f5f069;
+        --lengkung: 1rem;
+        --lengkungO: 9999px;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      .pengantin {
+        background-color: var(--hijau-muda);
+      }
+
+      .pengantin .container {
+        padding: 5rem 0;
+      }
+
+      .pengantin h3 {
+        color: var(--font-hijau);
+        text-align: center;
+        font-weight: bold;
+      }
+
+      .pengantin img.garis {
+        width: 70%;
+      }
+
+      /* ? Pengantin Pria */
+      .pengantin .pria {
+        padding: 8rem 0;
+      }
+
+      .pengantin .pria .nama .card {
+        border: 0;
+        padding: 1.5rem;
+        color: var(--hijau-muda);
+        /*background-color: rgba(1, 40, 0, 0.2);
+        */
+        background-color: var(--hijau);
+        z-index: 2;
+        position: absolute;
+        left: 3.45rem;
+        top: 22rem;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+      }
+
+      .pengantin .pria .nama .card span {
+        font-style: italic;
+        color: var(--abu-abu2);
+      }
+
+      .pengantin .pria .nama .card h1 {
+        /* color: rgba(1, 40, 0, 1); */
+        color: var(--hijau-muda);
+      }
+
+      .pengantin .pria .gambar .card {
+        background-color: transparent;
+        border: 0;
+        z-index: 1;
+      }
+
+      .pengantin .pria .gambar .card img.gambar-pria {
+        z-index: 1;
+        margin: auto;
+        width: 72%;
+        border-radius: 10% 10% 0 0;
+        -webkit-border-radius: 10% 10% 0 0;
+        -moz-border-radius: 10% 10% 0 0;
+        -ms-border-radius: 10% 10% 0 0;
+        -o-border-radius: 10% 10% 0 0;
+      }
+
+      .pengantin .pria .gambar .card img.star {
+        width: 40%;
+        z-index: 2;
+        position: absolute;
+        bottom: -76px;
+        left: 64%;
+      }
+
+      .pengantin .pria .ortu .card {
+        border: 0;
+        padding: 1.5rem;
+        width: 47%;
+        color: var(--hijau-muda);
+        background-color: var(--hijau);
+        z-index: 2;
+        position: absolute;
+        right: 0;
+        top: 30rem;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+      }
+
+      .pengantin .pria .ortu .card span {
+        font-style: italic;
+        color: var(--abu-abu2);
+        margin-bottom: 1rem;
+      }
+
+      .pengantin .pria .ortu .card h1 {
+        color: var(--abu-abu);
+      }
+
+      /* ? Pengantin Wanita */
+      .pengantin .wanita {
+        padding: 8rem 0;
+      }
+
+      .pengantin .wanita .ortu .card {
+        border: 0;
+        padding: 1.5rem;
+        width: 46.9%;
+        color: var(--hijau-muda);
+        background-color: var(--hijau);
+        z-index: 2;
+        position: absolute;
+        left: 0;
+        top: 64rem;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+      }
+
+      .pengantin .wanita .nama .card span {
+        font-style: italic;
+        color: var(--abu-abu2);
+      }
+
+      .pengantin .wanita .nama .card h1 {
+        /* color: rgba(1, 40, 0, 1); */
+        color: var(--hijau-muda);
+      }
+
+      .pengantin .wanita .gambar .card {
+        background-color: transparent;
+        border: 0;
+      }
+
+      .pengantin .wanita .gambar .card img.gambar-wanita {
+        z-index: 1;
+        margin: auto;
+        width: 72%;
+        border-radius: 10% 10% 0 0;
+        -webkit-border-radius: 10% 10% 0 0;
+        -moz-border-radius: 10% 10% 0 0;
+        -ms-border-radius: 10% 10% 0 0;
+        -o-border-radius: 10% 10% 0 0;
+      }
+
+      .pengantin .wanita .gambar .card img.star {
+        width: 40%;
+        z-index: 2;
+        position: absolute;
+        bottom: -76px;
+        right: 66%;
+      }
+
+      .pengantin .wanita .nama .card {
+        border: 0;
+        padding: 1.5rem;
+        color: var(--hijau-muda);
+        background-color: var(--hijau);
+        z-index: 2;
+        position: absolute;
+        right: 3.45rem;
+        top: 73rem;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+      }
+
+      .pengantin .wanita .ortu .card span {
+        font-style: italic;
+        color: var(--abu-abu2);
+        padding-bottom: 1rem;
+      }
+      @media (min-width: 992px) and (max-width: 1199.98px) {
+        .pengantin .pengantin-pria .pria .card,
+        .pengantin .pengantin-wanita .wanita .card {
+          max-width: 23rem;
+          width: 23rem;
+          height: 23rem;
+        }
+        .pengantin .pengantin-pria .pria img.bunga3 {
+          max-width: 45%;
+          right: 0px;
+        }
+        .pengantin .pengantin-wanita .wanita img.bunga3 {
+          max-width: 45%;
+          left: 0px;
+        }
+        .pengantin .pengantin-wanita .ortu {
+          padding-top: 6rem;
+        }
+      }
+      @media (min-width: 768px) and (max-width: 991.98px) {
+        .pengantin .pria .ortu .card {
+          top: 42rem;
+        }
+        .pengantin .pria .nama .card {
+          top: 23rem;
+          left: 0rem;
+        }
+        /* Wanita */
+        .pengantin .wanita .nama .card {
+          top: 118rem;
+        }
+        .pengantin .wanita .ortu .card {
+          top: 88rem;
+        }
+      }
+      @media (max-width: 575.98px) {
+        /* * Pengantin */
+        .pengantin .pfphone {
+          background-color: var(--hijau);
+          height: auto;
+        }
+        /* * Pengantin Pria */
+        .pengantin .pfphone h3.cp {
+          text-align: center;
+          color: var(--hijau-muda);
+          font-weight: normal;
+          padding-top: 2rem;
+        }
+        .pengantin .pfphone img.garis {
+          margin-bottom: 2rem;
+          transform: rotate(180deg);
+          -webkit-transform: rotate(180deg);
+          -moz-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+          -o-transform: rotate(180deg);
+        }
+        .pengantin .pfphone .pria {
+          padding: 1rem;
+        }
+        .pengantin .pfphone .pria .tulisan,
+        .pengantin .pfphone .pria .gambar {
+          border: 0;
+          background-color: transparent;
+        }
+        /* * Tulisan */
+        .pengantin .pfphone .pria .tulisan {
+          width: 50%;
+        }
+        .pengantin .pfphone .pria .tulisan .nama {
+          margin-bottom: 1rem;
+        }
+        .pengantin .pfphone .pria .tulisan .nama span,
+        .pengantin .pfphone .pria .tulisan .ortu span {
+          color: var(--abu-abu2);
+          font-size: 0.7rem;
+          font-style: italic;
+        }
+        .pengantin .pfphone .pria .tulisan .nama h5 {
+          margin-top: 0.5rem;
+          color: var(--font-kuning);
+        }
+        .pengantin .pfphone .pria .tulisan .ortu h6 {
+          margin-top: 0.5rem;
+          color: var(--hijau-muda);
+        }
+        /* * Gambar */
+        .pengantin .pfphone .pria .gambar img.gambar-pria {
+          width: 50%;
+          position: absolute;
+          top: -14.5rem;
+          right: 0;
+          border-radius: 10%;
+          -webkit-border-radius: 10%;
+          -moz-border-radius: 10%;
+          -ms-border-radius: 10%;
+          -o-border-radius: 10%;
+        }
+        .pengantin .pfphone .pria .gambar img.star {
+          width: 20%;
+          position: absolute;
+          top: -0.4rem;
+          right: -1rem;
+        }
+        /* * Lekukan */
+        .pengantin .pfphone img.lekukan {
+          margin-top: 4rem;
+          margin-bottom: 1.5rem;
+          width: 97%;
+        }
+        /* * Pengantin Wanita */
+        .pengantin .pfphone .wanita {
+          padding: 1rem 1rem 5rem 1rem;
+        }
+        .pengantin .pfphone .wanita .tulisan,
+        .pengantin .pfphone .wanita .gambar {
+          border: 0;
+          background-color: transparent;
+        }
+        /* * Tulisan */
+        .pengantin .pfphone .wanita .tulisan {
+          width: 50%;
+        }
+        .pengantin .pfphone .wanita .tulisan .nama {
+          margin-bottom: 1rem;
+        }
+        .pengantin .pfphone .wanita .tulisan .nama span,
+        .pengantin .pfphone .wanita .tulisan .ortu span {
+          color: var(--abu-abu2);
+          font-size: 0.7rem;
+          font-style: italic;
+        }
+        .pengantin .pfphone .wanita .tulisan .nama h5 {
+          margin-top: 0.5rem;
+          color: var(--font-kuning);
+        }
+        .pengantin .pfphone .wanita .tulisan .ortu h6 {
+          margin-top: 0.5rem;
+          color: var(--hijau-muda);
+        }
+        /* * Gambar */
+        .pengantin .pfphone .wanita .gambar img.gambar-wanita {
+          width: 50%;
+          position: absolute;
+          top: -14.5rem;
+          right: 0;
+          border-radius: 10%;
+          -webkit-border-radius: 10%;
+          -moz-border-radius: 10%;
+          -ms-border-radius: 10%;
+          -o-border-radius: 10%;
+        }
+        .pengantin .pfphone .wanita .gambar img.star {
+          width: 20%;
+          position: absolute;
+          top: -0.4rem;
+          right: -1rem;
+        }
+      }
+  </style>
+  <body>
+    <!-- ? Pengantin -->
+    <div id="pengantin" class="pengantin">
+      <!-- For Desktop and Tablet -->
+        <div class="container d-none d-md-block d-lg-block">
+            <h3>Calon Pengantin</h3>
+            <div class="d-flex justify-content-center align-items-center">
+                <img src="garis0.png" class="img-fluid garis" alt="">
+            </div>
+            <!-- Pengantin Pria -->
+            <div class="d-flex justify-content-center pria">
+                <div class="col-lg-3 nama">
+                    <div class="card">
+                        <span>Calon Pengantin Pria</span>
+                        <h1>Kalvin Morgan</h1>
+                        <h1>Syd, S.Kom, M.Kom</h1>
+                    </div>
+                </div>
+                <div class="col-lg-4 gambar">
+                  <div class="card">
+                    <img src="pria.jpg" class="img-fluid gambar-pria" alt="mempelai pria">
+                    <img src="star.png" class="img-fluid star" alt="star icon">
+                  </div>
+                </div>
+                <div class="col-lg-5 ortu">
+                    <div class="card">
+                        <span>Putra Pertama Dari:</span>
+                        <h4>Dr. Ayahanda Morgan, BA, M.BA</h4>
+                        <h4>dr. Ibunda Morgan, S.Pd, M.Pd</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- Pengantin Wanita -->
+            <div class="d-flex justify-content-center wanita">
+                <div class="col-lg-5 ortu">
+                    <div class="card">
+                        <span>Putri Pertama Dari:</span>
+                        <h4>Dr. Ayahanda Fathima, BA, M.BA</h4>
+                        <h4>dr. Ibunda Fathima, S.Pd, M.Pd</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 gambar">
+                  <div class="card">
+                    <img src="wanita.jpg" class="img-fluid gambar-wanita" alt="mempelai pria">
+                    <img src="star.png" class="img-fluid star" alt="star icon">
+                  </div>
+                </div>
+                <div class="col-lg-3 nama">
+                    <div class="card">
+                        <span>Calon Pengantin Wanita</span>
+                        <h1>Fathima Atkins</h1>
+                        <h1>Syd, S.Kom, M.Kom</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+      <!-- For Mobile Phone -->
+      <div class="pfphone d-md-none d-lg-none d-xl-none d-xxl-none">
+        <h3 class="cp">Calon Pengantin</h3>
+        <div class="d-flex justify-content-center align-items-center">
+          <img src="garis-phone.png" class="img-fluid garis" alt="">
+      </div>
+        <div class="pria">
+          <div class="card tulisan">
+            <div class="nama">
+              <span>Calon Pengantin Pria</span>
+              <h5>Kalvin Morgan Syd, S.Kom, M.Kom</h5>
+            </div>
+            <div class="ortu">
+              <span>Putra Pertama Dari</span>
+              <h6>Dr.Ayahanda Morgan, BA, M.BA</h6>
+              <h6>Drs.Ibunda Morgan, S.Pd, M.Pd</h6>
+            </div>
+          </div>
+          <div class="card gambar">
+            <img src="pria.jpg" class="img-fluid gambar-pria" alt="">
+            <img src="star2.png" class="img-fluid star" alt="">
+          </div>
+        </div>
+          <!-- * Gambar Lekukan -->
+        <div class="d-flex justify-content-start">
+          <img src="lekukan.png" class="img-fluid lekukan" alt="">
+        </div>
+        <div class="wanita">
+          <div class="card tulisan">
+            <div class="nama">
+              <span>Calon Pengantin Wanita</span>
+              <h5>Fathima Atkins Syd, S.Kom, M.Kom</h5>
+            </div>
+            <div class="ortu">
+              <span>Putri Pertama Dari</span>
+              <h6>Dr.Ayahanda Fathima, BA, M.BA</h6>
+              <h6>Drs.Ibunda Fathima, S.Pd, M.Pd</h6>
+            </div>
+          </div>
+          <div class="card gambar">
+            <img src="wanita.jpg" class="img-fluid gambar-wanita" alt="">
+            <img src="star2.png" class="img-fluid star" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  </html>

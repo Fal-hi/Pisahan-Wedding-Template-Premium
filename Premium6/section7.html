@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Section 7 Mengundang Keluarga Besar</title>
+    <link
+      rel="shortcut icon"
+      href="favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Aref+Ruqaa&display=swap" rel="stylesheet"/>
+  </head>
+  <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Aref Ruqaa", serif;
+      }
+
+      :root {
+        --warna1: #f1f6f9;
+        --warna2: #394867;
+        --warna3: #9ba4b4;
+        --warna4: #f1f6f9;
+        --lengkung: 1rem;
+        --lengkungO: 999px;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      .mengundang {
+        background: var(--warna2);
+        color: var(--warna1);
+        text-align: center;
+      }
+
+      .mengundang img.bunga4 {
+        width: 30%;
+      }
+
+      .mengundang h3.ttm {
+        margin: 2rem auto;
+        font-weight: bold;
+      }
+
+      .mengundang .keluarga-wanita {
+        display: flex;
+        justify-content: space-between;
+        align-items: inherit;
+      }
+
+      .mengundang .keluarga-wanita .kwgb1,
+      .mengundang .keluarga-wanita .kwgb2 {
+        margin-top: -3.5rem;
+      }
+
+      .mengundang .keluarga-wanita img.bunga61 {
+        max-width: 25%;
+        position: absolute;
+        left: 20px;
+        transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+      }
+
+      .mengundang img.bunga62 {
+        max-width: 25%;
+        position: absolute;
+        right: 20px;
+      }
+      @media (min-width: 768px) and (max-width: 991.98px) {
+        .mengundang img.bunga4 {
+          width: 35%;
+        }
+        .mengundang .keluarga-wanita img.bunga61 {
+          margin-top: 5.5rem;
+        }
+        .mengundang img.bunga62 {
+          margin-top: 5.5rem;
+        }
+      }
+      @media (max-width: 575.98px) {
+        .mengundang .keluarga-wanita .kwgb1,
+        .mengundang .keluarga-wanita .kwgb2 {
+          margin-top: 7.5rem;
+        }
+        .mengundang .keluarga-wanita img.bunga61 {
+          left: 0px;
+        }
+        .mengundang .keluarga-wanita img.bunga62 {
+          right: 0px;
+        }
+      }
+  </style>
+  <body>
+    <div class="mengundang" id="mengundang">
+      <div class="container">
+        <div class="d-flex justify-content-center align-items-center">
+          <img
+            src="bunga4.png"
+            class="bunga4"
+            alt="Bunga 4"
+          />
+        </div>
+        <h3 class="ttm">Turut Mengundang</h3>
+        <div class="keluarga-pria">
+          <span>Keluarga Besar Mempelai Pria</span>
+          <h4 class="mt-4">Dr. Ayahanda M.Pd</h4>
+          <h4>Drs. Ibunda M.Pd</h4>
+          <h4>Dr. Dicky Panjaitan, M.Pd</h4>
+          <h4>M. Maxim Panjaitan M.Pd</h4>
+        </div>
+        <div class="keluarga-wanita pt-4 pb-5">
+          <div class="kwgb1">
+            <img
+              src="bunga6.png"
+              class="bunga61"
+              alt="Bunga 6"
+            />
+          </div>
+          <div class="kbw">
+            <span>Keluarga Besar Mempelai Wanita</span>
+            <h4 class="mt-4">Dr. Ayahanda M.Pd</h4>
+            <h4>Drs. Ibunda M.Pd</h4>
+            <h4>Ir. Grabby Park M.Pd</h4>
+          </div>
+          <div class="kwgb2">
+            <img
+              src="bunga6.png"
+              class="bunga62"
+              alt="Bunga 6"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  </html>

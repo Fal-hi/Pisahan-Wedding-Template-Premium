@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Section 4 Gallery Pernikahan</title>
+    <link
+      rel="shortcut icon"
+      href="favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Birthstone+Bounce&family=Noto+Serif&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Nuosu SIL', serif;
+      }
+
+      :root {
+        --warna1: #ff8c32;
+        --warna2: #06113c;
+        --warna3: #eeeeee;
+        --warna4: #dddddd;
+        --lengkung: 1rem;
+        --lengkungO: 999px;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* ? Gallery */
+      .gallery {
+        padding-bottom: 5rem;
+      }
+
+      .gallery h3.tg {
+        text-align: center;
+        font-style: italic;
+        color: var(--warna2);
+        padding-bottom: 1rem;
+        text-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
+      }
+
+      .gallery .card {
+        margin: 0.5rem;
+        z-index: 2;
+        background-color: transparent;
+        border: 0;
+      }
+
+      .gallery .card img {
+        max-width: 100%;
+        height: 40vh;
+        overflow: hidden;
+        object-fit: cover;
+        -o-object-fit: cover;
+        object-position: center;
+        -o-object-position: center;
+      }
+
+      .gallery .isi-gallery .baris1 {
+        display: grid;
+        grid-template-columns: auto 25% auto;
+        margin: auto 1rem;
+      }
+
+      .gallery .isi-gallery .baris2 {
+        display: grid;
+        grid-template-columns: 25% auto auto;
+        margin: auto 1rem;
+      }
+
+      .gallery img.bunga4 {
+        z-index: 1;
+        margin-top: -22rem;
+        max-width: 40%;
+        height: auto;
+        position: absolute;
+        right: 0;
+      }
+      @media (min-width: 992px) and (max-width: 1199.98px) {
+        .gallery img.bunga4 {
+          margin-top: -13rem;
+        }
+      }
+      @media (min-width: 768px) and (max-width: 991.98px) {
+        .gallery .card img {
+          max-width: 100%;
+          width: 100%;
+          height: 30vh;
+        }
+        .gallery img.bunga4 {
+          margin-top: -8rem;
+        }
+      }
+      @media (max-width: 575.98px) {
+        .gallery .isi-gallery .baris1 {
+          grid-template-areas:
+            "g3 g3 g3 g3"
+            "g1 g1 g2 g2";
+        }
+        .gallery .isi-gallery .baris2 {
+          grid-template-areas:
+            "g4 g4 g5 g5"
+            "g6 g6 g6 g6";
+        }
+        .gallery .isi-gallery .gallery1 {
+          grid-area: g1;
+        }
+        .gallery .isi-gallery .gallery2 {
+          grid-area: g2;
+        }
+        .gallery .isi-gallery .gallery3 {
+          grid-area: g3;
+        }
+        .gallery .isi-gallery .gallery4 {
+          grid-area: g4;
+        }
+        .gallery .isi-gallery .gallery5 {
+          grid-area: g5;
+        }
+        .gallery .isi-gallery .gallery6 {
+          grid-area: g6;
+        }
+        .gallery .isi-gallery .card img {
+          height: 25vh;
+        }
+        .gallery img.bunga4 {
+          margin-top: -9rem;
+          max-width: 70%;
+        }
+      }
+  </style>
+  <body>
+    <!-- Gallery -->
+      <div class="gallery" id="gallery">
+        <h3 class="tg">Gallery</h3>
+        <div class="container">
+          <div class="isi-gallery">
+            <div class="baris1">
+              <div class="card gallery1">
+                <a class="glightbox" href="wi15.jpg">
+                  <img
+                    src="wi15.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+              <!-- card 2 -->
+              <div class="card gallery2">
+                <a class="glightbox" href="wi5.jpg">
+                  <img
+                    src="wi5.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+              <!-- card 3 -->
+              <div class="card gallery3">
+                <a class="glightbox" href="wi12.jpg">
+                  <img
+                    src="wi12.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="baris2">
+              <!-- card 4 -->
+              <div class="card gallery4">
+                <a class="glightbox" href="wi9.jpg">
+                  <img
+                    src="wi9.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+              <!-- card 5 -->
+              <div class="card gallery5">
+                <a class="glightbox" href="wi7.jpg">
+                  <img
+                    src="wi7.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+              <!-- card 6 -->
+              <div class="card gallery6">
+                <a class="glightbox" href="wi14.jpg">
+                  <img
+                    src="wi14.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <img
+            src="bunga4.png"
+            class="bunga4"
+            alt="Bunga4"
+          />
+        </div>
+      </div>
+
+
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script type="text/javascript">
+      // Gallery glightbox
+      const lightbox = GLightbox({
+          closeOnOutsideClick: false,
+          loop: true
+      });
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  </html>

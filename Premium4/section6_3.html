@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Section 6.3 Lokasi Resepsi 2</title>
+    <link
+      rel="shortcut icon"
+      href="favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+  </head>
+  <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Alegreya", sans-serif;
+      }
+
+      :root {
+        --font-besar: #362222;
+        --font-sedang: #171010;
+        --font-kecil: #7e7979;
+        --warna-header: linear-gradient(
+          90deg,
+          #fffef7 42.47%,
+          #d1e0da 65.68%,
+          #9dbeb9 100%
+        );
+        --warna-body: linear-gradient(
+          112.68deg,
+          rgba(247, 198, 160, 0.2) 0%,
+          rgba(233, 197, 164, 0.577584) 37.48%,
+          rgba(220, 196, 168, 0.651302) 46.41%,
+          rgba(157, 190, 185, 0.2) 77.14%
+        );
+        --warna-button: linear-gradient(90deg, #f7c6a0 0%, #9dbeb9 100%);
+        --shadow-button: 2px 2px 2px var(--font-kecil);
+        --shadow-text: 3px 3px 4px var(--font-kecil);
+        --lengkung: 1rem;
+        --lengkungO: 999px;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      .resepsi2 {
+        background: var(--warna-body) !important;
+        padding-bottom: 5rem;
+      }
+
+      .resepsi2 img {
+        width: 70%;
+      }
+
+      .resepsi2 h1.tan {
+        font-style: italic;
+        color: var(--font-besar);
+        text-shadow: var(--shadow-text);
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+
+      .resepsi2 .tdj h3 {
+        text-align: center;
+        color: var(--font-sedang);
+      }
+
+      .resepsi2 p.tempat {
+        text-align: center;
+        font-style: italic;
+        color: var(--font-kecil);
+        margin-bottom: 1rem;
+      }
+
+      .resepsi2 .google-map {
+        height: 400px;
+        width: 100%;
+        margin-bottom: 1rem;
+        border-radius: var(--lengkung);
+        -webkit-border-radius: var(--lengkung);
+        -moz-border-radius: var(--lengkung);
+        -ms-border-radius: var(--lengkung);
+        -o-border-radius: var(--lengkung);
+      }
+
+      .resepsi2 button.btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--putih);
+        padding: 0.5rem 2rem;
+        background: var(--warna-button);
+        box-shadow: var(--shadow-button);
+        border-radius: var(--lengkungO);
+        -webkit-border-radius: var(--lengkungO);
+        -moz-border-radius: var(--lengkungO);
+        -ms-border-radius: var(--lengkungO);
+        -o-border-radius: var(--lengkungO);
+      }
+      @media (max-width: 575.98px) {
+        .lokasi .google-map {
+          margin: auto;
+          height: 200px;
+          width: 100%;
+        }
+      }
+  </style>
+  <body>
+    <!-- Lokasi -->
+    <div class="resepsi2">
+      <div class="container">
+        <div class="d-flex justify-content-center align-items-center">
+          <img
+            src="garis-atas.png"
+            class="garis"
+            alt=""
+          />
+        </div>
+        <h1 class="tan">Resepsi 2</h1>
+        <div class="tdj">
+          <h3>Sabtu, 07 Mei 2023</h3>
+          <h3>Jam 09.00 - Selesai</h3>
+        </div>
+        <p class="tempat">
+          Jl. Pepaya Raya, Kuranji, Kec. Kuranji, Kota Padang, Sumatera Barat
+          25173
+        </p>
+        <!-- Map Akad Nikah -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.3010958429218!2d100.3577223147536!3d-0.9225826993269867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2fd4b8b50f84e2df%3A0x6b663fb549733102!2sSTMIK%20Indonesia%20Padang!5e0!3m2!1sid!2sid!4v1656595492006!5m2!1sid!2sid"
+          class="google-map"
+          allowfullscreen="true"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        <button type="submit" class="btn mx-auto">Lihat Lokasi</button>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  </html>

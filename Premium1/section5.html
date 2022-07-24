@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Section 5 Acara Pernikahan</title>
+    <link
+      rel="shortcut icon"
+      href="favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+  </head>
+  <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Nuosu SIL', serif;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Philosopher", sans-serif;
+      }
+
+      /* ? Acara */
+      .acara {
+        background-color: #efe8e8;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 20rem;
+      }
+
+      .acara .tanggal {
+        padding-top: 10rem;
+        padding-bottom: 5rem;
+      }
+
+      .acara .tanggal h2 {
+        font-size: 34px;
+        font-weight: 700;
+        color: #41280b;
+      }
+
+      .acara .tanggal p {
+        font-size: 24px;
+        color: #828282;
+      }
+
+      .acara .hari {
+        margin-bottom: 2rem;
+      }
+
+      .acara .hari h1 {
+        margin-bottom: 1rem;
+      }
+
+      .acara .hari p {
+        font-size: 18px;
+        color: #828282;
+      }
+
+      .acara .waktu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 2rem;
+      }
+
+      .acara .waktu .jam,
+      .acara .waktu .menit,
+      .acara .waktu .detik {
+        margin: 0 3rem;
+      }
+
+      .acara .tamu {
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+      }
+
+      .acara .tamu h1 {
+        margin-bottom: 0.5rem;
+      }
+
+      .acara .tamu p {
+        font-size: 18px;
+        margin-bottom: 0;
+        line-height: 1.3rem;
+        color: #828282;
+      }
+
+      .acara .konfirmasi {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 5rem;
+      }
+
+      .acara .konfirmasi button {
+        background-color: #41280b;
+        color: #efe8e8;
+        border-radius: 999px;
+        -webkit-border-radius: 999px;
+        -moz-border-radius: 999px;
+        -ms-border-radius: 999px;
+        -o-border-radius: 999px;
+      }
+
+      .acara .konfirmasi i.bi {
+        border: 1px solid #41280b;
+        color: #41280b;
+        padding: 0.5rem 0.8rem;
+        border-radius: 999px;
+        -webkit-border-radius: 999px;
+        -moz-border-radius: 999px;
+        -ms-border-radius: 999px;
+        -o-border-radius: 999px;
+      }
+  </style>
+  <body>
+    <!-- Waktu Acara -->
+    <div class="acara" id="acara">
+      <div class="container">
+      <div class="tanggal text-center">
+        <h2>Acara akan diselenggarakan</h2>
+        <br />
+        <h4>Minggu, 10 Februari 2022</h4>
+      </div>
+      <div class="hari text-center">
+        <h1 id="hari"></h1>
+        <p>Hari</p>
+      </div>
+      <div class="waktu text-center">
+        <div class="jam">
+          <h1 id="jam"></h1>
+          <p>Jam</p>
+        </div>
+        <div class="menit">
+          <h1 id="menit"></h1>
+          <p>Menit</p>
+        </div>
+        <div class="detik">
+          <h1 id="detik"></h1>
+          <p>Detik</p>
+        </div>
+      </div>
+      <div class="tamu text-center">
+        <h1>300 Tamu</h1>
+        <p>Merespon akan datang,</p>
+        <p>Ayo kirim respon kamu juga!</p>
+      </div>
+      <div class="konfirmasi">
+        <button type="submit" class="btn me-2">
+          Konfirmasi kehadiran
+        </button>
+        <i class="bi bi-bell-fill"></i>
+      </div>
+    </div>
+    </div>
+            
+    <script type="text/javascript">
+      // Countdown
+      // Atur waktu akhir
+      let countDownDate = new Date("Juli 17, 2022 08:00:00").getTime();
+
+      // Update waktu setiap 1 detik
+      let x = setInterval(function () {
+        // dapatkan tanggal dan waktu sekarang
+        let now = new Date().getTime();
+
+        // Cari jarak waktu sekarang dengan waktu akhir
+        let distance = countDownDate - now;
+
+        // Kalkukalasikan waktu
+        let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("hari").innerText = days;
+        document.getElementById("jam").innerText = hours;
+        document.getElementById("menit").innerText = minutes;
+        document.getElementById("detik").innerText = seconds;
+      }, 1000);
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Section 4 Gallery Pernikahan</title>
+    <link
+      rel="shortcut icon"
+      href="favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+  </head>
+  <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Philosopher", sans-serif;
+      }
+
+      #gallery img.background-gallery {
+        z-index: 1;
+        width: 100%;
+        height: 535px;
+        object-fit: cover;
+        -o-object-fit: cover;
+        object-position: center;
+        -o-object-position: center;
+        overflow: hidden;
+        filter: brightness(70%);
+        -webkit-filter: brightness(70%);
+      }
+
+      #gallery h3 {
+        text-align: center;
+        color: #efe8e8;
+      }
+
+      #gallery .container {
+        z-index: 2;
+        position: absolute;
+        top: 2rem;
+        left: 5%;
+        right: 5%;
+      }
+
+      #gallery .list-images {
+        backdrop-filter: blur(1px);
+        -webkit-backdrop-filter: blur(1px);
+        padding: 1rem;
+        display: grid;
+        grid-template-areas:
+          "g1 g2 g3 g4"
+          "g1 g5 g6 g6"
+          "g7 g8 g6 g6";
+      }
+
+      #gallery .list-images .card {
+        margin: 0.5rem;
+        background-color: transparent;
+        border: 0;
+      }
+
+      #gallery .list-images .card img {
+        overflow: hidden;
+        object-fit: cover;
+        -o-object-fit: cover;
+        object-position: center;
+        -o-object-position: center;
+        border-radius: 22px;
+        -webkit-border-radius: 22px;
+        -moz-border-radius: 22px;
+        -ms-border-radius: 22px;
+        -o-border-radius: 22px;
+        filter: drop-shadow(0 0 3px grey);
+        -webkit-filter: drop-shadow(0 0 3px grey);
+      }
+      #gallery .list-images .gallery1 {
+        grid-area: g1;
+      }
+      #gallery .list-images .gallery2 {
+        grid-area: g2;
+      }
+      #gallery .list-images .gallery3 {
+        grid-area: g3;
+      }
+      #gallery .list-images .gallery4 {
+        grid-area: g4;
+      }
+      #gallery .list-images .gallery5 {
+        grid-area: g5;
+      }
+      #gallery .list-images .gallery6 {
+        grid-area: g6;
+      }
+      #gallery .list-images .gallery7 {
+        grid-area: g7;
+      }
+      #gallery .list-images .gallery8 {
+        grid-area: g8;
+      }
+      @media (min-width: 992px) and (max-width: 1199.98px) {
+        #gallery h2 {
+          font-size: 55px;
+        }
+        #gallery .container {
+          top: 2rem;
+          left: 0%;
+          right: 0%;
+        }
+        #gallery img.background-gallery {
+          height: 470px;
+        }
+      }
+      @media (min-width: 768px) and (max-width: 991.98px) {
+        #gallery h2 {
+          font-size: 24px;
+        }
+        #gallery .dekor-garis {
+          width: 70%;
+        }
+        #gallery img.background-gallery {
+          height: 445px;
+        }
+        #gallery .container {
+          top: 2rem;
+          left: 0;
+        }
+        #gallery .container img.garis {
+          width: 70%;
+        }
+      }
+      @media (max-width: 575.98px) {
+        #gallery .container img.garis {
+          width: 50%;
+        }
+        #gallery .container {
+          top: 2rem;
+        }
+        #gallery .list-images {
+          backdrop-filter: blur(1px);
+          -webkit-backdrop-filter: blur(1px);
+          padding: 1rem;
+          display: grid;
+          grid-template-areas:
+            "g1 g2"
+            "g1 g3"
+            "g4 g5"
+            "g6 g7"
+            "g8 g8";
+        }
+      }
+  </style>
+  <body>
+    <div id="gallery">
+      <img src="wi3.jpg" class="background-gallery" alt="">
+      <div class="container">
+        <h3>Gallery Mempelai</h3>
+        <div class="d-flex justify-content-center align-items-center">
+          <img src="dekor-garis-pengantin.png" class="garis" alt="">
+        </div>
+        <div class="list-images">
+        <!-- card 1 -->
+        <div class="card gallery1">
+          <a
+            class="img-fluid glightbox"
+            href="wi4.jpg"
+          >
+            <img
+              src="wi4.jpg"
+              alt=""
+              class="img-fluid"
+            />
+          </a>
+        </div>
+        <!-- card 2 -->
+        <div class="card gallery2">
+          <a
+            class="img-fluid glightbox"
+            href="wi3.jpg"
+          >
+            <img
+              src="wi3.jpg"
+              alt=""
+              class="img-fluid"
+            />
+          </a>
+        </div>
+        <!-- card 3 -->
+        <div class="card gallery3">
+          <a
+            class="img-fluid glightbox"
+            href="wi12.jpg"
+          >
+            <img
+              src="wi12.jpg"
+              alt=""
+              class="img-fluid"
+            />
+          </a>
+        </div>
+        <!-- card 4 -->
+        <div class="card gallery4">
+          <a
+            class="img-fluid glightbox"
+            href="wi9.jpg"
+          >
+            <img
+              src="wi9.jpg"
+              alt=""
+              class="img-fluid"
+            />
+          </a>
+        </div>
+        <!-- card 5 -->
+        <div class="card gallery5">
+          <a
+            class="img-fluid glightbox"
+            href="wi8.jpg"
+          >
+            <img
+              src="wi8.jpg"
+              alt=""
+              class="img-fluid"
+            />
+          </a>
+        </div>
+        <!-- card 6 -->
+        <div class="card gallery6">
+          <a
+            class="img-fluid glightbox"
+            href="wi13.jpg"
+          >
+            <img
+              src="wi13.jpg"
+              alt=""
+              class="img-fluid"
+            />
+          </a>
+        </div>
+        <!-- card 7 -->
+        <div class="card gallery7">
+          <a
+            class="img-fluid glightbox"
+            href="wi14.jpg"
+          >
+            <img
+              src="wi14.jpg"
+              alt=""
+              class="img-fluid"
+            />
+          </a>
+        </div>
+        <!-- card 8 -->
+        <div class="card gallery8">
+          <a
+            class="img-fluid glightbox"
+            href="wi12.jpg"
+          >
+            <img
+              src="wi12.jpg"
+              alt=""
+              class="img-fluid"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script type="text/javascript">
+      // Gallery glightbox
+      const lightbox = GLightbox({
+          closeOnOutsideClick: false,
+          loop: true
+      });
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Section 1 Header Pernikahan</title>
+    <link
+      rel="shortcut icon"
+      href="favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
+  </head>
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Quintessential', cursive;
+      }
+
+    :root {
+      --warna1: #C7956D;
+      --warna2: #733C3C;
+      --warna3: #534E52;
+      --warna4: #FFFEF7;
+      --lengkung: 1rem;
+      --lengkungO: 999px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    ul.navbar-bawah {
+    list-style: none;
+    position: fixed;
+    bottom: 20px;
+    left: 49.5%;
+    width: 90%;
+    background-color: var(--hitam);
+    z-index: 9999;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    border-radius: var(--lengkungO);
+    -webkit-border-radius: var(--lengkungO);
+    -moz-border-radius: var(--lengkungO);
+    -ms-border-radius: var(--lengkungO);
+    -o-border-radius: var(--lengkungO);
+  }
+
+  ul.navbar-bawah li {
+    border-radius: var(--lengkungO);
+    -webkit-border-radius: var(--lengkungO);
+    -moz-border-radius: var(--lengkungO);
+    -ms-border-radius: var(--lengkungO);
+    -o-border-radius: var(--lengkungO);
+    transition: 0.1s;
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -ms-transition: 0.1s;
+    -o-transition: 0.1s;
+  }
+
+  ul.navbar-bawah li a {
+    color: var(--abu-abu);
+    font-size: 2rem;
+  }
+
+  ul.navbar-bawah li a:hover {
+    color: var(--biru-muda);
+  }
+  /* * End Menu Mobile */
+
+  /* * Music */
+  .tombol-musik {
+    position: fixed;
+    bottom: 80px;
+    right: 70px;
+    z-index: 9999;
+    background-color: var(--hitam);
+    cursor: pointer;
+    padding: 10px 18px;
+    border-radius: var(--lengkungO);
+    -webkit-border-radius: var(--lengkungO);
+    -moz-border-radius: var(--lengkungO);
+    -ms-border-radius: var(--lengkungO);
+    -o-border-radius: var(--lengkungO);
+  }
+
+  .tombol-musik i {
+    color: var(--biru-muda);
+    font-size: 30px;
+  }
+
+    /* ? Header */
+    .header {
+      background: rgb(255, 255, 255);
+      background: linear-gradient(130deg, rgba(255, 255, 255, 1) 49%, rgba(199, 149, 109, 1) 50%);
+      width: 100%;
+      height: 100vh;
+    }
+
+    .header .nmp h1 {
+      padding: 10rem 5rem 0 5rem;
+      color: var(--warna2);
+    }
+
+    .header .nmp img.bunga2 {
+      max-width: 30%;
+      height: auto;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+
+    .header .fm img.foto-mempelai {
+      z-index: 2;
+      margin-top: 4rem;
+      max-width: 54%;
+      height: auto;
+      border-radius: var(--lengkungO);
+      -webkit-border-radius: var(--lengkungO);
+      -moz-border-radius: var(--lengkungO);
+      -ms-border-radius: var(--lengkungO);
+      -o-border-radius: var(--lengkungO);
+    }
+
+    .header .fm img.bunga1 {
+      z-index: 1;
+      max-width: 35%;
+      height: auto;
+      position: absolute;
+      top: 10%;
+      left: 39%;
+    }
+
+    .header p.th {
+      padding-top: 2rem;
+      text-align: center;
+      color: var(--warna2);
+    }
+
+    .header .nmw h1 {
+      text-align: right;
+      padding: 20rem 5rem 0 5rem;
+      color: var(--warna2);
+    }
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      .header .fm img.foto-mempelai {
+        margin-top: 7rem;
+      }
+      .header .fm img.bunga1 {
+        top: 20%;
+        left: 40%;
+      }
+      .header .nmw h1 {
+        padding: 22rem 5rem 0 5rem;
+      }
+    }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .header .fm img.bunga1 {
+        max-width: 50%;
+        top: 20%;
+        left: 40%;
+      }
+      .header .nmp img.bunga2 {
+        max-width: 50%;
+        top: 0;
+        transform: rotateX(180deg);
+        -webkit-transform: rotateX(180deg);
+        -moz-transform: rotateX(180deg);
+        -ms-transform: rotateX(180deg);
+        -o-transform: rotateX(180deg);
+    }
+      .header .nmp h1 {
+        padding: 27rem 0 0 0;
+      }
+      .header .fm img.foto-mempelai {
+        margin-top: 20rem;
+        max-width: 100%;
+      }
+      .header .nmw h1 {
+        padding: 40rem 0 0 0;
+      }
+    }
+    @media (max-width: 575.98px) {
+      .tombol-musik {
+        right: 20px;
+        padding: 5px 13px;
+      }
+      .header .header-phone h1.nmp {
+        padding-top: 3rem;
+        padding-left: 2rem;
+      }
+      .header .header-phone .d-flex {
+        margin-top: 3rem;
+      }
+      .header .header-phone h1.nmw {
+        text-align: right;
+        padding-top: 3rem;
+        padding-right: 2rem;
+      }
+      .header .header-phone img.foto-mempelai {
+        z-index: 2;
+        max-width: 70%;
+        height: auto;
+        border-radius: var(--lengkungO);
+        -webkit-border-radius: var(--lengkungO);
+        -moz-border-radius: var(--lengkungO);
+        -ms-border-radius: var(--lengkungO);
+        -o-border-radius: var(--lengkungO);
+      }
+      .header .header-phone img.bunga1 {
+        max-width: 95%;
+        height: auto;
+        position: absolute;
+        top: 10rem;
+        left: 4%;
+      }
+      .header .header-phone img.bunga2_1 {
+        max-width: 50%;
+        height: auto;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+      .header .header-phone img.bunga2_2 {
+        max-width: 50%;
+        height: auto;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+      }
+    }
+  </style>
+  <body>
+    <!-- Navbar Bawah -->
+    <ul class="navbar-bawah d-flex justify-content-around m-0">
+      <li>
+        <a href="#header">
+          <i class="bi bi-envelope-heart"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#pengantin">
+          <i class="bi bi-people-fill"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#gallery">
+          <i class="bi bi-images"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#acara">
+          <i class="bi bi-calendar2-event"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#kartu">
+          <i class="bi bi-envelope-paper-heart-fill"></i>
+        </a>
+      </li>
+    </ul>
+
+    <!-- Music -->
+    <div class="tombol-musik">
+      <audio id="track" src="Sezairi-It's_You.mp3"></audio>
+      <i id="play-pause" class="bi bi-play-fill"> </i>
+    </div>
+
+    <div class="header" id="header">
+      <div class="container d-none d-md-block d-lg-block d-xl-block d-xxl-block">
+        <!-- Desktop&Tablet -->
+          <div class="row">
+            <div class="col-lg-3 col-md-3 nmp">
+              <h1>Mark Robinson</h1>
+              <img src="bunga2.png" class="bunga2" alt="Bunga 2">
+            </div>
+            <div class="col-lg-6 col-md-6 fm">
+              <div class="d-flex justify-content-center align-items-center">
+                <img src="mempelai.jpg" class="foto-mempelai" alt="Mempelai">
+              </div>
+              <img src="bunga1.png" class="bunga1" alt="Bunga 1">
+              <p class="th">
+                Atas karunia Allah SWT izinkan Kami mengundang sekaligus mengharapkan doa restu dari bapak/ibu dalam acara pernikahan putra & putri kami.
+              </p>
+            </div>
+            <div class="col-lg-3 col-md-3 nmw">
+              <h1>Ralline Syah</h1>
+            </div>
+          </div>
+        <!-- Phone -->
+      </div>
+      <div class="header-phone d-md-none d-lg-none d-xl-none d-xxl-none">
+        <h1 class="nmp">Mark Robinson</h1>
+        <div class="d-flex justify-content-center align-items-center">
+          <img src="mempelai.jpg" class="foto-mempelai" alt="Mempelai">
+          <img src="bunga1.png" class="bunga1" alt="Bunga 1">
+        </div>
+        <h1 class="nmw">Ralline Syah</h1>
+        <p class="th">
+          Atas karunia Allah SWT izinkan Kami mengundang sekaligus mengharapkan doa restu dari bapak/ibu dalam acara pernikahan putra & putri kami.
+        </p>
+        <img src="bunga2.png" class="bunga2_1" alt="Bunga 2">
+        <img src="bunga2.png" class="bunga2_2" alt="Bunga 2">
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      // Musik
+      const track = document.getElementById('track');
+      const button = document.getElementById('play-pause');
+
+      function playPause() {
+          if(track.paused) {
+              track.play();
+              button.className = "bi-pause-fill";
+          } else {
+              track.pause();
+              button.className = "bi-play-fill";
+          }
+      }
+      // Button Music
+      button.addEventListener('click', playPause);
+      track.addEventListener('ended', function() {
+          button.className = "bi-play-fill";
+      });
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  </html>
