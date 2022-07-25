@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Section 6.3 Lokasi Resepsi 2</title>
+    <link
+      rel="shortcut icon"
+      href="favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Quintessential&display=swap" rel="stylesheet"/>
+  </head>
+  <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Quintessential", cursive;
+      }
+
+      :root {
+        --warna1: #630000;
+        --warna2: #180a0a;
+        --warna3: #eeebdd;
+        --warna4: #d8b6a4;
+        --lengkung: 1rem;
+        --lengkungO: 999px;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        background: var(--warna3);
+      }
+
+      .gb4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .gb4 img.bunga4 {
+        max-width: 15%;
+        height: auto;
+        margin: 4rem auto;
+      }
+
+      .lokasi .akad-nikah,
+      .lokasi .resepsi1,
+      .lokasi .resepsi2 {
+        text-align: center;
+      }
+
+      .lokasi .resepsi1,
+      .lokasi .resepsi2 {
+        margin-top: 2rem;
+      }
+
+      .lokasi h3.tan {
+        font-weight: bold;
+        color: var(--warna1);
+        margin-bottom: 2rem;
+      }
+
+      .lokasi .tdj {
+        color: var(--warna2);
+        margin-bottom: 1rem;
+      }
+
+      .lokasi span {
+        color: var(--warna2);
+      }
+
+      .lokasi .google-map {
+        z-index: 2;
+        margin-top: 1rem;
+        height: 400px;
+        width: 100%;
+        border-radius: var(--lengkung);
+        -webkit-border-radius: var(--lengkung);
+        -moz-border-radius: var(--lengkung);
+        -ms-border-radius: var(--lengkung);
+        -o-border-radius: var(--lengkung);
+      }
+
+      .lokasi button.btn {
+        margin-top: 2rem;
+        background: var(--warna1);
+        color: var(--warna3);
+        padding: 0.5rem 3rem;
+        border-radius: var(--lengkungO);
+        -webkit-border-radius: var(--lengkungO);
+        -moz-border-radius: var(--lengkungO);
+        -ms-border-radius: var(--lengkungO);
+        -o-border-radius: var(--lengkungO);
+      }
+      @media (min-width: 768px) and (max-width: 991.98px) {
+        .gb4 img.bunga4 {
+          max-width: 25%;
+          margin: 2rem auto;
+        }
+      }
+      @media (max-width: 575.98px) {
+        .gb4 img.bunga4 {
+          max-width: 50%;
+          margin: 2rem auto;
+        }
+        .lokasi .google-map {
+          height: 250px;
+        }
+      }
+  </style>
+  <body>
+      <!-- Lokasi -->
+      <div class="lokasi" id="lokasi">
+        <div class="container">
+          <!-- Resepsi 2 -->
+          <div class="resepsi2">
+            <h3 class="tlok">Resepsi 2</h3>
+            <div class="jdt">
+              <h4>Senin, 09 Mei 2022</h4>
+              <h4>Jam 09.00 - Selesai</h4>
+              <p>
+                Jl. Pepaya Raya, Kuranji, Kec. Kuranji, Kota Padang, Sumatera
+                Barat 25173
+              </p>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.3010958429218!2d100.3577223147536!3d-0.9225826993269867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2fd4b8b50f84e2df%3A0x6b663fb549733102!2sSTMIK%20Indonesia%20Padang!5e0!3m2!1sid!2sid!4v1656595492006!5m2!1sid!2sid"
+                class="google-map"
+                allowfullscreen="true"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <button type="submit" class="btn mx-auto mb-5">Lihat Lokasi</button>
+          </div>
+        </div>
+      </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  </html>
