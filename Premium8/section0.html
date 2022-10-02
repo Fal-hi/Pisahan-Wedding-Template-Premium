@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Section 0 Pembuka Pernikahan</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allura&family=Quintessential&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Quintessential", cursive;
+    }
+
+    :root {
+      --warna1: #630000;
+      --warna2: #180a0a;
+      --warna3: #eeebdd;
+      --warna4: #d8b6a4;
+      --lengkung: 1rem;
+      --lengkungO: 999px;
+    }
+
+    body {
+      height: 100vh;
+    }
+
+    .header {
+      background-color: var(--warna3);
+    }
+
+    .header .bg-mawar {
+      height: 50vh;
+    }
+
+    .header .laptop {
+      height: 50vh;
+    }
+
+    .header .laptop div {
+      color: var(--warna3);
+      text-align: center;
+      position: relative;
+      bottom: 40vh;
+      z-index: 3;
+    }
+
+    .header .laptop div h1 {
+      font-family: "Allura", cursive;
+      font-size: 4rem;
+    }
+
+    .header .laptop div p {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+
+    .header .laptop div p.p1 {
+      color: var(--warna3);
+      margin-top: 1rem;
+    }
+
+    .header .laptop div p.p2 {
+      color: var(--warna1);
+      margin-top: 4rem;
+    }
+
+    .header .laptop div a {
+      font-size: 3.5rem;
+      color: var(--warna1);
+    }
+
+    .header .laptop .bunga img {
+      max-width: 10%;
+      height: auto;
+      position: fixed;
+      bottom: 0;
+    }
+
+    .header .laptop .bunga img:nth-child(1) {
+      left: 0;
+    }
+
+    .header .laptop .bunga img:nth-child(2) {
+      right: 0;
+      transform: rotateY(180deg);
+    }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .header .laptop div {
+        bottom: 33vh;
+      }
+      .header .laptop div p {
+        margin-top: -6rem;
+      }
+      .header .laptop div p.p2 {
+        margin-top: 10rem;
+      }
+      .header .laptop .bunga img {
+        max-width: 25%;
+      }
+    }
+    @media (max-width: 575.98px) {
+      .header {
+        height: 100vh;
+      }
+      .header .foto-mempelai {
+        position: absolute;
+        top: 2rem;
+      }
+      .header .foto-mempelai img.bunga1 {
+        max-width: 25%;
+        margin-top: 14rem;
+        margin-right: -2rem;
+      }
+      .header .foto-mempelai img.foto {
+        max-width: 60%;
+        border-top-left-radius: 5rem;
+        border-bottom-right-radius: 5rem;
+      }
+      .header .foto-mempelai img.bunga2 {
+        max-width: 25%;
+        margin-top: 14rem;
+        margin-left: -2rem;
+      }
+      /* ! For Mobile */
+      .header .nama-mempelai .mobile {
+        text-align: center;
+        font-weight: normal;
+      }
+      .header .nama-mempelai .mobile {
+        padding-top: 2rem;
+      }
+      .header .nama-mempelai .mobile h1 {
+        color: var(--warna1);
+        font-size: 2.5rem;
+      }
+      .header .nama-mempelai .mobile p {
+        color: var(--warna2);
+        padding: 1rem 0;
+        font-size: 1rem;
+        margin-bottom: 0;
+      }
+      .header .nama-mempelai .mobile p {
+        width: 90%;
+        margin: auto;
+      }
+      .header .nama-mempelai .mobile a.btn {
+        background-color: var(--warna1);
+        color: var(--warna3);
+        padding: 0.5rem 1.5rem;
+        margin-top: 2rem;
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 50px;
+      }
+    }
+  </style>
+  <body>
+    <div class="header" id="header">
+      <div
+        class="bg-mawar"
+        style="
+          background-image: url('bg1.png');
+          background-size: cover;
+          background-repeat: no-repeat;
+        "
+      ></div>
+      <div class="nama-mempelai">
+        <!-- Laptop -->
+        <div class="laptop d-none d-md-block d-lg-block d-xl-block d-xxl-block">
+          <div>
+            <h1>Faaziq & Sadiqah</h1>
+            <p class="p1">Kepada Bpk/Ibu/Saudara/I</p>
+            <h1>Zony & Partner</h1>
+            <p class="p2">
+              Tanpa mengurangi rasa hormat, kami mengundang Anda untuk hadir ke
+              acara pernikahan kami
+            </p>
+            <a href="section1.html" class="bi bi-arrow-down-circle-fill"></a>
+          </div>
+          <div class="bunga">
+            <img src="bunga3.png" alt="Bunga 3" />
+            <img src="bunga3.png" alt="Bunga 3" />
+          </div>
+        </div>
+        <!-- Phone -->
+        <div class="mobile d-md-none d-lg-none d-xl-none d-xxl-none">
+          <div class="foto-mempelai">
+            <img src="bunga1.png" class="bunga1" alt="Bunga 1" />
+            <img src="mempelai.jpg" class="foto" alt="Foto Mempelai" />
+            <img src="bunga2.png" class="bunga2" alt="Bunga 2" />
+          </div>
+          <h1>Faaziq & Sadiqah</h1>
+          <p>Kepada Bpk/Ibu/Saudara/I</p>
+          <h1>Zony & Partner</h1>
+          <p class="p2">
+            Tanpa mengurangi rasa hormat, kami mengundang Anda untuk hadir ke
+            acara pernikahan kami
+          </p>
+          <a href="section1.html" class="btn">Buka Undangan</a>
+        </div>
+      </div>
+    </div>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    ></script>
+  </body>
+</html>
