@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Section 0 Pembuka Pernikahan</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Petrona&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style type="text/css">
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Petrona", serif;
+    }
+
+    :root {
+      --hijau: #012800;
+      --hijau-muda: #ebfdeb;
+      --putih: #fff;
+      --abu-abu: #828282;
+      --abu-abu2: #bdbdbd;
+      --font-hijau: #012800;
+      --font-kuning: #f5f069;
+      --lengkung: 1rem;
+      --lengkungO: 9999px;
+    }
+
+    .header {
+      background-color: var(--hijau);
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      width: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .header .wi {
+      color: var(--putih);
+      text-align: center;
+      padding-top: 10rem;
+    }
+
+    .header .wi h1 {
+      color: var(--font-kuning);
+      font-size: 5rem;
+      margin-bottom: 0;
+    }
+
+    .header .wi h2 {
+      font-size: 3rem;
+    }
+
+    .header .wi h6 {
+      font-family: "Noto Serif", serif;
+      margin: auto;
+      font-size: 1.4rem;
+      padding: 2rem 0;
+    }
+
+    .header .wi a {
+      font-size: 3.5rem;
+      color: var(--warna2);
+    }
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      .header {
+        height: 100vh;
+      }
+      .header .mempelai {
+        margin-top: 0;
+      }
+      .header .pengantin-pria,
+      .header .pengantin-wanita {
+        padding: 8rem 0;
+      }
+      .header .pengantin-wanita {
+        padding-right: 1rem;
+      }
+    }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .header {
+        background-size: contain;
+      }
+      .header .wi {
+        padding-top: 23rem;
+      }
+      .header .wi h1 {
+        color: var(--font-kuning);
+        font-size: 3.5rem;
+        margin-bottom: 0;
+      }
+      .header .wi h2 {
+        font-size: 2.5rem;
+      }
+      .header .wi h6 {
+        font-family: "Noto Serif", serif;
+        margin: auto;
+        font-size: 1.1rem;
+        padding: 1rem 0;
+      }
+    }
+    @media (max-width: 575.98px) {
+      .header {
+        background-size: cover;
+        background-position: center;
+      }
+      .header .wi a.btn {
+        font-family: "Noto Serif", serif;
+        background-color: var(--hijau-muda);
+        color: var(--font-hijau);
+        padding: 0.5rem 1.5rem;
+        margin-top: 2rem;
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 50px;
+      }
+    }
+  </style>
+  <body>
+    <div id="header">
+      <!-- For Desktop -->
+      <div
+        class="header d-none d-md-block d-lg-block d-xl-block d-xxl-block"
+        style="
+          background-image: url('header-desktop.png');
+          background-position: center;
+        "
+      >
+        <div class="container">
+          <div class="wi d-none d-md-block d-lg-block d-xl-block d-xxl-block">
+            <h1>Jojo & Rose</h1>
+            <h6>Kepada Bpk/Ibu/Saudara/I</h6>
+            <h2>Dini & Partner</h2>
+            <h6>
+              Tanpa mengurangi rasa hormat, kami mengundang Anda untuk hadir ke
+              acara pernikahan kami
+            </h6>
+            <a href="section1.html" class="bi bi-arrow-down-circle-fill"></a>
+          </div>
+        </div>
+      </div>
+      <!-- For Phone -->
+      <div
+        class="header d-md-none d-lg-none d-xl-none d-xxl-none"
+        style="background-image: url('header-phone.png')"
+      >
+        <div class="container">
+          <div class="wi d-md-none d-lg-none d-xl-none d-xxl-none">
+            <h5>Wedding Invitation</h5>
+            <h1>Jojo & Rose</h1>
+            <h5>07 Mei 2023</h5>
+            <p>
+              Tanpa mengurangi rasa hormat, kami mengundang Anda untuk hadir ke
+              acara pernikahan kami
+            </p>
+            <a href="section1.html" class="btn">Buka Undangan</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    ></script>
+  </body>
+</html>
