@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carattere&family=El+Messiri&display=swap"
+      rel="stylesheet"
+    />
+    <title>Section 0 Pembuka Pernikahan</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "El Messiri", sans-serif;
+    }
+
+    :root {
+      --warna1: #32502e;
+      --warna2: #406343;
+      --warna3: #ece7b4;
+      --warna4: #f3efcc;
+      --lengkung: 1rem;
+      --lengkungO: 999px;
+    }
+    .header {
+      background-color: #ece7b4;
+      height: 100vh;
+    }
+    .isi {
+      text-align: center;
+      z-index: 2;
+      position: absolute;
+      color: #32502e;
+    }
+    .isi h1 {
+      font-family: "Carattere", cursive;
+    }
+    .isi h5 {
+      padding: 1rem 0;
+    }
+    .isi a i {
+      color: #32502e;
+    }
+    .laptop .isi {
+      padding-top: 9rem;
+    }
+    .laptop .isi h1 {
+      font-size: 4rem;
+    }
+    .laptop img.bg1 {
+      max-width: 50%;
+      height: 100vh;
+      z-index: 1;
+      position: absolute;
+      object-position: center;
+      object-fit: cover;
+    }
+    .laptop img.bunga1 {
+      max-width: 25%;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    .laptop .isi a {
+      font-size: 3.5rem;
+    }
+    .phone .isi {
+      padding-top: 4rem;
+    }
+    .phone .isi h1 {
+      font-size: 2.5rem;
+    }
+    .phone .isi h6 {
+      padding: 1rem 0;
+    }
+    .phone img.gambar-mempelai {
+      margin-top: 5rem;
+    }
+    .phone .isi a {
+      text-decoration: none;
+      border-radius: 50px;
+      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+      background-color: #32502e;
+      color: #ece7b4;
+      margin-top: 1rem;
+    }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .laptop img.bunga1 {
+        max-width: 35%;
+      }
+      .laptop .isi {
+        padding-top: 23rem;
+      }
+    }
+    @media (max-width: 575.98px) {
+      .header .nama-mempelai img.bunga1 {
+        max-width: 50%;
+      }
+      .header .foto-mempelai {
+        max-height: 55vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .header .foto-mempelai img {
+        max-width: 50%;
+        height: auto;
+        max-width: 75%;
+        margin-top: 8rem;
+        z-index: 2;
+        border-radius: var(--lengkung);
+        -webkit-border-radius: var(--lengkung);
+        -moz-border-radius: var(--lengkung);
+        -ms-border-radius: var(--lengkung);
+        -o-border-radius: var(--lengkung);
+      }
+      .header .nama-mempelai {
+        height: 55vh;
+      }
+      .header .nama-mempelai .nama {
+        margin-top: 9rem;
+      }
+      .header .nama-mempelai p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+  <body>
+    <section class="header">
+      <!-- Laptop -->
+      <div class="laptop d-none d-md-block d-lg-block d-xl-block d-xxl-block">
+        <img src="bunga1.png" class="bunga1" alt="bunga1" />
+        <div class="row">
+          <img src="bg1.png" class="bg1" alt="bg1" />
+          <div class="isi">
+            <h1>Khairul & Andine</h1>
+            <h5>Kepada Bapak/Ibu/Saudara/I</h5>
+            <h1>Zony & Partner</h1>
+            <h5>
+              Tanpa mengurangi rasa hormat, kami mengundang Anda untuk hadir ke
+              acara pernikahan kami.
+            </h5>
+            <a href="section1.html">
+              <i class="bi bi-arrow-down-circle-fill"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Phone -->
+      <div class="phone">
+        <div class="phone row mx-auto d-md-none d-lg-none d-xl-none d-xxl-none">
+          <div
+            class="col-lg-6 col-md-6 foto-mempelai"
+            style="
+              background: url('bg1.png');
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          >
+            <img src="mempelai.jpg" class="gambar-mempelai" alt="Mempelai" />
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="isi">
+              <h1>Khairul & Andine</h1>
+              <h6>Kepada Bapak/Ibu/Saudara/I</h6>
+              <h1>Zony & Partner</h1>
+              <h6>
+                Tanpa mengurangi rasa hormat, kami mengundang Anda untuk hadir
+                ke acara pernikahan kami.
+              </h6>
+              <a href="isi.html" class="btn"> Buka Undangan </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    ></script>
+  </body>
+</html>
