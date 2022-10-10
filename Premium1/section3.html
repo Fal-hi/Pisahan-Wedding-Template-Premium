@@ -5,225 +5,227 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Section 3 Pengantin Pernikahan</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
     <link
-      rel="shortcut icon"
-      href="favicon.png"
-      type="image/x-icon"
+      rel="stylesheet"
+      href=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <style type="text/css">
     * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-      html {
-        scroll-behavior: smooth;
-      }
+    html {
+      scroll-behavior: smooth;
+    }
 
-      body {
-        font-family: "Philosopher", sans-serif;
-      }
+    body {
+      font-family: "Philosopher", sans-serif;
+    }
 
-      .mempelai h2 {
-        font-size: 38px;
-        font-weight: 700;
-      }
+    .mempelai {
+      background-color: #efe8e8;
+    }
 
+    .mempelai h2 {
+      font-size: 38px;
+      font-weight: 700;
+    }
+
+    .mempelai .pengantin .pengantin-pria {
+      margin-top: 6.5rem;
+    }
+
+    .mempelai .pengantin .pengantin-pria h2 {
+      font-size: 65px;
+      font-weight: 400;
+      color: #41280b;
+    }
+
+    .mempelai .pengantin .pengantin-pria p {
+      font-size: 24px;
+      color: #828282;
+    }
+
+    .mempelai .pengantin .pengantin-pria h4 {
+      font-size: 34px;
+      color: #41280b;
+    }
+
+    .mempelai .pengantin .pengantin-wanita {
+      margin-top: 19.9rem;
+      padding-bottom: 45.75rem;
+    }
+
+    .mempelai .pengantin .pengantin-wanita h2 {
+      font-size: 65px;
+      font-weight: 400;
+      color: #41280b;
+    }
+
+    .mempelai .pengantin .pengantin-wanita p {
+      font-size: 24px;
+      color: #828282;
+    }
+
+    .mempelai .pengantin .pengantin-wanita h4 {
+      font-size: 34px;
+      color: #41280b;
+    }
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      .mempelai {
+        height: 100%;
+      }
+      .mempelai h2,
+      #gallery h2 {
+        font-size: 55px;
+      }
+      .mempelai .dekor-garis,
+      #waktuAcara .dekor-garis,
+      #gallery .dekor-garis {
+        width: 70%;
+      }
       .mempelai .pengantin .pengantin-pria {
-        margin-top: 6.5rem;
+        margin-top: 5rem;
       }
-
+      .mempelai .pengantin .pengantin-pria img {
+        width: 50%;
+      }
       .mempelai .pengantin .pengantin-pria h2 {
-        font-size: 65px;
-        font-weight: 400;
-        color: #41280b;
+        font-weight: 700;
+        font-size: 48px;
       }
-
       .mempelai .pengantin .pengantin-pria p {
-        font-size: 24px;
-        color: #828282;
+        margin-top: 1.6rem !important;
+        margin-bottom: 1.5rem !important;
       }
-
-      .mempelai .pengantin .pengantin-pria h4 {
-        font-size: 34px;
-        color: #41280b;
-      }
-
       .mempelai .pengantin .pengantin-wanita {
-        margin-top: 19.9rem;
-        padding-bottom: 45.75rem;
+        margin-top: 14rem;
+        padding-bottom: 0px;
       }
-
+      .mempelai .pengantin .pengantin-wanita img {
+        width: 50%;
+      }
       .mempelai .pengantin .pengantin-wanita h2 {
-        font-size: 65px;
-        font-weight: 400;
-        color: #41280b;
+        font-weight: 700;
+        font-size: 48px;
       }
-
       .mempelai .pengantin .pengantin-wanita p {
-        font-size: 24px;
-        color: #828282;
+        margin-top: 1.6rem !important;
+        margin-bottom: 1.5rem !important;
       }
-
+    }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .mempelai {
+        height: 135em;
+      }
+      .mempelai .dekor-garis,
+      #waktuAcara .dekor-garis,
+      #gallery .dekor-garis {
+        width: 70%;
+      }
+      .mempelai .pengantin .pengantin-pria {
+        margin-top: 5em;
+      }
+      .mempelai .pengantin .pengantin-pria img {
+        width: 50%;
+      }
+      .mempelai .pengantin .pengantin-pria h2 {
+        font-weight: 700;
+        font-size: 38px;
+      }
+      .mempelai .pengantin .pengantin-pria p {
+        margin-top: 1.3em !important;
+        margin-bottom: 1.2em !important;
+      }
+      .mempelai .pengantin .pengantin-pria h4 {
+        font-size: 28px;
+      }
+      .mempelai .pengantin .pengantin-wanita {
+        margin-top: 14em;
+        padding-bottom: 0px;
+      }
+      .mempelai .pengantin .pengantin-wanita img {
+        width: 50%;
+      }
+      .mempelai .pengantin .pengantin-wanita h2 {
+        font-weight: 700;
+        font-size: 38px;
+      }
+      .mempelai .pengantin .pengantin-wanita p {
+        margin-top: 1.3em !important;
+        margin-bottom: 1.2em !important;
+      }
       .mempelai .pengantin .pengantin-wanita h4 {
-        font-size: 34px;
-        color: #41280b;
+        font-size: 28px;
       }
-      @media (min-width: 992px) and (max-width: 1199.98px) {
-        .mempelai {
-          height: 100%;
-        }
-        .mempelai h2,
-        #gallery h2 {
-          font-size: 55px;
-        }
-        .mempelai .dekor-garis,
-        #waktuAcara .dekor-garis,
-        #gallery .dekor-garis {
-          width: 70%;
-        }
-        .mempelai .pengantin .pengantin-pria {
-          margin-top: 5rem;
-        }
-        .mempelai .pengantin .pengantin-pria img {
-          width: 50%;
-        }
-        .mempelai .pengantin .pengantin-pria h2 {
-          font-weight: 700;
-          font-size: 48px;
-        }
-        .mempelai .pengantin .pengantin-pria p {
-          margin-top: 1.6rem !important;
-          margin-bottom: 1.5rem !important;
-        }
-        .mempelai .pengantin .pengantin-wanita {
-          margin-top: 14rem;
-          padding-bottom: 0px;
-        }
-        .mempelai .pengantin .pengantin-wanita img {
-          width: 50%;
-        }
-        .mempelai .pengantin .pengantin-wanita h2 {
-          font-weight: 700;
-          font-size: 48px;
-        }
-        .mempelai .pengantin .pengantin-wanita p {
-          margin-top: 1.6rem !important;
-          margin-bottom: 1.5rem !important;
-        }
+    }
+    @media (max-width: 575.98px) {
+      .mempelai {
+        height: 55.2em;
       }
-      @media (min-width: 768px) and (max-width: 991.98px) {
-        .mempelai {
-          height: 135em;
-        }
-        .mempelai .dekor-garis,
-        #waktuAcara .dekor-garis,
-        #gallery .dekor-garis {
-          width: 70%;
-        }
-        .mempelai .pengantin .pengantin-pria {
-          margin-top: 5em;
-        }
-        .mempelai .pengantin .pengantin-pria img {
-          width: 50%;
-        }
-        .mempelai .pengantin .pengantin-pria h2 {
-          font-weight: 700;
-          font-size: 38px;
-        }
-        .mempelai .pengantin .pengantin-pria p {
-          margin-top: 1.3em !important;
-          margin-bottom: 1.2em !important;
-        }
-        .mempelai .pengantin .pengantin-pria h4 {
-          font-size: 28px;
-        }
-        .mempelai .pengantin .pengantin-wanita {
-          margin-top: 14em;
-          padding-bottom: 0px;
-        }
-        .mempelai .pengantin .pengantin-wanita img {
-          width: 50%;
-        }
-        .mempelai .pengantin .pengantin-wanita h2 {
-          font-weight: 700;
-          font-size: 38px;
-        }
-        .mempelai .pengantin .pengantin-wanita p {
-          margin-top: 1.3em !important;
-          margin-bottom: 1.2em !important;
-        }
-        .mempelai .pengantin .pengantin-wanita h4 {
-          font-size: 28px;
-        }
+      .mempelai h2,
+      #gallery h2 {
+        font-size: 24px;
       }
-      @media (max-width: 575.98px) {
-        .mempelai {
-          height: 55.2em;
-        }
-        .mempelai h2,
-        #gallery h2 {
-          font-size: 24px;
-        }
-        .mempelai .dekor-garis,
-        #waktuAcara .dekor-garis,
-        #gallery .dekor-garis {
-          width: 70%;
-        }
-        .mempelai .pengantin .pengantin-pria {
-          margin-top: 1.6em;
-        }
-        .mempelai .pengantin .pengantin-pria h2 {
-          font-size: 18px;
-          font-weight: 700;
-          margin-top: 1.5em !important;
-        }
-        .mempelai .pengantin .pengantin-pria p {
-          margin-top: 0.6em !important;
-          font-size: 12px;
-          margin-bottom: 0.5em !important;
-        }
-        .mempelai .pengantin .pengantin-pria h4 {
-          font-size: 14px;
-        }
-        .mempelai .pengantin .pengantin-wanita {
-          margin-top: 4.75em;
-          padding-bottom: 0px;
-        }
-        .mempelai .pengantin .pengantin-wanita h2 {
-          font-size: 18px;
-          font-weight: 700;
-          margin-top: 1.5em !important;
-        }
-        .mempelai .pengantin .pengantin-wanita p {
-          margin-top: 0.6em !important;
-          font-size: 12px;
-          margin-bottom: 0.5em !important;
-        }
-        .mempelai .pengantin .pengantin-wanita h4 {
-          font-size: 14px;
-        }
+      .mempelai .dekor-garis,
+      #waktuAcara .dekor-garis,
+      #gallery .dekor-garis {
+        width: 70%;
       }
+      .mempelai .pengantin .pengantin-pria {
+        margin-top: 1.6em;
+      }
+      .mempelai .pengantin .pengantin-pria h2 {
+        font-size: 18px;
+        font-weight: 700;
+        margin-top: 1.5em !important;
+      }
+      .mempelai .pengantin .pengantin-pria p {
+        margin-top: 0.6em !important;
+        font-size: 12px;
+        margin-bottom: 0.5em !important;
+      }
+      .mempelai .pengantin .pengantin-pria h4 {
+        font-size: 14px;
+      }
+      .mempelai .pengantin .pengantin-wanita {
+        margin-top: 4.75em;
+        padding-bottom: 0px;
+      }
+      .mempelai .pengantin .pengantin-wanita h2 {
+        font-size: 18px;
+        font-weight: 700;
+        margin-top: 1.5em !important;
+      }
+      .mempelai .pengantin .pengantin-wanita p {
+        margin-top: 0.6em !important;
+        font-size: 12px;
+        margin-bottom: 0.5em !important;
+      }
+      .mempelai .pengantin .pengantin-wanita h4 {
+        font-size: 14px;
+      }
+    }
   </style>
   <body>
     <!-- Mempelai -->
     <div class="mempelai text-center" id="mempelai">
       <h2>Calon Pengantin</h2>
-      <img
-        src="dekor-garis-pengantin.png"
-        class="img-fluid dekor-garis"
-      />
+      <img src="dekor-garis-pengantin.png" class="img-fluid dekor-garis" />
       <div class="pengantin">
         <div class="pengantin-pria">
           <img
@@ -266,6 +268,9 @@
       </div>
     </div>
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    ></script>
   </body>
-  </html>
+</html>
