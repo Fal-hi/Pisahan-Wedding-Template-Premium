@@ -150,14 +150,17 @@
       }
     }
     @media (max-width: 575.98px) {
+      .header {
+        height: 100%;
+      }
       .header .mempelai {
-        height: 100vh;
+        height: 100%;
       }
       .header .mempelai .row {
         flex-direction: column-reverse;
       }
       .header .mempelai .phone .nama {
-        margin-top: 2rem;
+        margin-top: 5rem;
         color: var(--warna1);
         text-align: center;
       }
@@ -202,7 +205,7 @@
         background-color: var(--warna3);
         color: var(--warna2);
         padding: 0.5rem 1.5rem;
-        margin-top: 2rem;
+        margin-bottom: 1rem;
         font-size: 1rem;
         font-weight: bold;
         border-radius: 50px;
@@ -220,7 +223,11 @@
     <section class="header" id="header">
       <div class="mempelai">
         <!-- Laptop -->
-        <img src="bunga1.png" class="bunga1" alt="Bunga 1" />
+        <img
+          src="bunga1.png"
+          class="bunga1 d-none d-md-block d-lg-block d-xl-block d-xxl-block"
+          alt="Bunga 1"
+        />
         <div
           class="laptop container-fluid row d-none d-md-block d-lg-block d-xl-block d-xxl-block"
         >

@@ -5,327 +5,292 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Section 4 Gallery Pernikahan</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
     <link
-      rel="shortcut icon"
-      href="favicon.png"
-      type="image/x-icon"
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
-    <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Carattere&family=El+Messiri&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carattere&family=El+Messiri&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <style type="text/css">
     * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "El Messiri", sans-serif;
-      }
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "El Messiri", sans-serif;
+    }
 
-      :root {
-        --warna1: #32502e;
-        --warna2: #406343;
-        --warna3: #ece7b4;
-        --warna4: #f3efcc;
-        --lengkung: 1rem;
-        --lengkungO: 999px;
-      }
+    :root {
+      --warna1: #32502e;
+      --warna2: #406343;
+      --warna3: #ece7b4;
+      --warna4: #f3efcc;
+      --lengkung: 1rem;
+      --lengkungO: 999px;
+    }
 
-      html {
-        scroll-behavior: smooth;
-      }
+    html {
+      scroll-behavior: smooth;
+    }
 
-      body {
-        background: var(--warna4);        
-      }
+    body {
+      background: var(--warna4);
+    }
 
+    .gallery img.bunga3 {
+      max-width: 30%;
+      height: auto;
+      position: absolute;
+      left: 0;
+    }
+
+    .b31 img.bunga31 {
+      margin-top: 2rem;
+      max-width: 30%;
+      height: auto;
+      position: absolute;
+      right: 0;
+      transform: rotateY(180deg);
+      -webkit-transform: rotateY(180deg);
+      -moz-transform: rotateY(180deg);
+      -ms-transform: rotateY(180deg);
+      -o-transform: rotateY(180deg);
+    }
+
+    .gallery h3.tg {
+      text-align: center;
+      color: var(--warna1);
+      font-weight: bold;
+      padding-top: 5rem;
+      padding-bottom: 3rem;
+      margin-bottom: 0;
+    }
+
+    .gallery .isi-gallery {
+      height: 90vh;
+      width: 100%;
+    }
+
+    .gallery .isi-gallery .container {
+      z-index: 2;
+      padding-top: 2rem;
+      backdrop-filter: blur(1px);
+      -webkit-backdrop-filter: blur(1px);
+      display: grid;
+      grid-template-areas:
+        "g1 g2 g3 g4"
+        "g1 g5 g6 g6"
+        "g7 g8 g6 g6";
+    }
+
+    .gallery .isi-gallery .container .card {
+      margin: 0.5rem;
+      background-color: transparent;
+      border: 0;
+    }
+
+    .gallery .isi-gallery .container .card img {
+      overflow: hidden;
+      object-fit: cover;
+      -o-object-fit: cover;
+      object-position: center;
+      -o-object-position: center;
+      border-radius: 22px;
+      -webkit-border-radius: 22px;
+      -moz-border-radius: 22px;
+      -ms-border-radius: 22px;
+      -o-border-radius: 22px;
+      filter: drop-shadow(0 0 3px grey);
+      -webkit-filter: drop-shadow(0 0 3px grey);
+    }
+
+    .gallery .isi-gallery .gallery1 {
+      grid-area: g1;
+    }
+
+    .gallery .isi-gallery .gallery2 {
+      grid-area: g2;
+    }
+
+    .gallery .isi-gallery .gallery3 {
+      grid-area: g3;
+    }
+
+    .gallery .isi-gallery .gallery4 {
+      grid-area: g4;
+    }
+
+    .gallery .isi-gallery .gallery5 {
+      grid-area: g5;
+    }
+
+    .gallery .isi-gallery .gallery6 {
+      grid-area: g6;
+      padding-top: 0.5rem;
+    }
+
+    .gallery .isi-gallery .gallery7 {
+      grid-area: g7;
+    }
+
+    .gallery .isi-gallery .gallery8 {
+      grid-area: g8;
+    }
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      .gallery h3.tg {
+        padding-top: 3rem;
+      }
+    }
+    @media (min-width: 768px) and (max-width: 991.98px) {
       .gallery img.bunga3 {
-        max-width: 30%;
+        max-width: 40%;
         height: auto;
         position: absolute;
         left: 0;
       }
-
       .b31 img.bunga31 {
-        margin-top: 16rem;
-        max-width: 30%;
-        height: auto;
-        position: absolute;
-        right: 0;
-        transform: rotateY(180deg);
-        -webkit-transform: rotateY(180deg);
-        -moz-transform: rotateY(180deg);
-        -ms-transform: rotateY(180deg);
-        -o-transform: rotateY(180deg);
+        max-width: 40%;
+        margin-top: 8rem;
       }
-
       .gallery h3.tg {
-        text-align: center;
-        color: var(--warna1);
-        font-weight: bold;
-        padding-top: 5rem;
+        padding-top: 3.5rem;
         padding-bottom: 3rem;
-        margin-bottom: 0;
       }
-
       .gallery .isi-gallery {
-        height: 90vh;
-        width: 100%;
+        height: auto;
       }
-
       .gallery .isi-gallery .container {
-        z-index: 2;
-        padding-top: 15rem;
-        backdrop-filter: blur(1px);
-        -webkit-backdrop-filter: blur(1px);
-        display: grid;
+        padding: 1rem 0;
+      }
+    }
+    @media (max-width: 575.98px) {
+      .gallery img.bunga3 {
+        max-width: 40%;
+      }
+      .b31 img.bunga31 {
+        margin-top: 2rem;
+        max-width: 40%;
+      }
+      .gallery h3.tg {
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+      }
+      .gallery .isi-gallery {
+        height: auto;
+      }
+      .gallery .isi-gallery .container {
+        padding-top: 2rem;
         grid-template-areas:
-          "g1 g2 g3 g4"
-          "g1 g5 g6 g6"
-          "g7 g8 g6 g6";
+          "g1 g2"
+          "g1 g3"
+          "g4 g5"
+          "g7 g8"
+          "g6 g6";
       }
-
-      .gallery .isi-gallery .container .card {
-        margin: 0.5rem;
-        background-color: transparent;
-        border: 0;
-      }
-
-      .gallery .isi-gallery .container .card img {
-        overflow: hidden;
-        object-fit: cover;
-        -o-object-fit: cover;
-        object-position: center;
-        -o-object-position: center;
-        border-radius: 22px;
-        -webkit-border-radius: 22px;
-        -moz-border-radius: 22px;
-        -ms-border-radius: 22px;
-        -o-border-radius: 22px;
-        filter: drop-shadow(0 0 3px grey);
-        -webkit-filter: drop-shadow(0 0 3px grey);
-      }
-
-      .gallery .isi-gallery .gallery1 {
-        grid-area: g1;
-      }
-
-      .gallery .isi-gallery .gallery2 {
-        grid-area: g2;
-      }
-
-      .gallery .isi-gallery .gallery3 {
-        grid-area: g3;
-      }
-
-      .gallery .isi-gallery .gallery4 {
-        grid-area: g4;
-      }
-
-      .gallery .isi-gallery .gallery5 {
-        grid-area: g5;
-      }
-
       .gallery .isi-gallery .gallery6 {
         grid-area: g6;
-        padding-top: 0.5rem;
+        padding-top: 0;
       }
-
-      .gallery .isi-gallery .gallery7 {
-        grid-area: g7;
-      }
-
-      .gallery .isi-gallery .gallery8 {
-        grid-area: g8;
-      }
-      @media (min-width: 992px) and (max-width: 1199.98px) {
-        .gallery h3.tg {
-          padding-top: 3rem;
-        }
-      }
-      @media (min-width: 768px) and (max-width: 991.98px) {
-        .gallery img.bunga3 {
-          max-width: 40%;
-          height: auto;
-          position: absolute;
-          left: 0;
-        }
-        .b31 img.bunga31 {
-          max-width: 40%;
-          margin-top: 8rem;
-        }
-        .gallery h3.tg {
-          padding-top: 3.5rem;
-          padding-bottom: 3rem;
-        }
-        .gallery .isi-gallery {
-          height: 35vh;
-        }
-        .gallery .isi-gallery .container {
-          padding-top: 10rem;
-        }
-      }
-      @media (max-width: 575.98px) {
-        .gallery img.bunga3 {
-          max-width: 40%;
-        }
-        .b31 img.bunga31 {
-          margin-top: 24.5rem;
-          max-width: 40%;
-        }
-        .gallery h3.tg {
-          padding-top: 3rem;
-          padding-bottom: 1rem;
-        }
-        .gallery .isi-gallery {
-          height: 60vh;
-        }
-        .gallery .isi-gallery .container {
-          padding-top: 7rem;
-          grid-template-areas:
-            "g1 g2"
-            "g1 g3"
-            "g4 g5"
-            "g7 g8"
-            "g6 g6";
-        }
-        .gallery .isi-gallery .gallery6 {
-          grid-area: g6;
-          padding-top: 0;
-        }
-      }
+    }
   </style>
   <body>
     <div class="gallery" id="gallery">
-      <img src="bunga3.png" class="bunga3" alt="Bunga 3">
+      <img src="bunga3.png" class="bunga3" alt="Bunga 3" />
       <h3 class="tg">Gallery</h3>
-      <div class="isi-gallery" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('wi15.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+      <div
+        class="isi-gallery"
+        style="
+          background: linear-gradient(
+              0deg,
+              rgba(0, 0, 0, 0.5),
+              rgba(0, 0, 0, 0.5)
+            ),
+            url('wi15.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        "
+      >
         <div class="container">
           <!-- card 1 -->
           <div class="card gallery1">
-            <a
-              class="img-fluid glightbox"
-              href="mempelai.jpg"
-            >
-              <img
-                src="mempelai.jpg"
-                alt=""
-                class="img-fluid"
-              />
+            <a class="img-fluid glightbox" href="mempelai.jpg">
+              <img src="mempelai.jpg" alt="" class="img-fluid" />
             </a>
           </div>
           <!-- card 2 -->
           <div class="card gallery2">
-            <a
-              class="img-fluid glightbox"
-              href="wi5.jpg"
-            >
-              <img
-                src="wi5.jpg"
-                alt=""
-                class="img-fluid"
-              />
+            <a class="img-fluid glightbox" href="wi5.jpg">
+              <img src="wi5.jpg" alt="" class="img-fluid" />
             </a>
           </div>
           <!-- card 3 -->
           <div class="card gallery3">
-            <a
-              class="img-fluid glightbox"
-              href="wi12.jpg"
-            >
-              <img
-                src="wi12.jpg"
-                alt=""
-                class="img-fluid"
-              />
+            <a class="img-fluid glightbox" href="wi12.jpg">
+              <img src="wi12.jpg" alt="" class="img-fluid" />
             </a>
           </div>
           <!-- card 4 -->
           <div class="card gallery4">
-            <a
-                class="img-fluid glightbox"
-                href="wi9.jpg"
-            >
-              <img
-                src="wi9.jpg"
-                alt=""
-                class="img-fluid"
-              />
+            <a class="img-fluid glightbox" href="wi9.jpg">
+              <img src="wi9.jpg" alt="" class="img-fluid" />
             </a>
           </div>
           <!-- card 5 -->
           <div class="card gallery5">
-            <a
-              class="img-fluid glightbox"
-              href="wi7.jpg"
-            >
-              <img
-                src="wi7.jpg"
-                alt=""
-                class="img-fluid"
-              />
+            <a class="img-fluid glightbox" href="wi7.jpg">
+              <img src="wi7.jpg" alt="" class="img-fluid" />
             </a>
           </div>
           <!-- card 6 -->
           <div class="card gallery6">
-            <a
-              class="img-fluid glightbox"
-              href="wi14.jpg"
-            >
-              <img
-                src="wi14.jpg"
-                alt=""
-                class="img-fluid"
-              />
+            <a class="img-fluid glightbox" href="wi14.jpg">
+              <img src="wi14.jpg" alt="" class="img-fluid" />
             </a>
           </div>
           <!-- card 7 -->
           <div class="card gallery7">
-            <a
-              class="img-fluid glightbox"
-              href="wi10.jpg"
-            >
-              <img
-                src="wi10.jpg"
-                alt=""
-                class="img-fluid"
-              />
+            <a class="img-fluid glightbox" href="wi10.jpg">
+              <img src="wi10.jpg" alt="" class="img-fluid" />
             </a>
           </div>
           <!-- card 8 -->
           <div class="card gallery8">
-            <a
-              class="img-fluid glightbox"
-              href="wi8.jpg"
-            >
-              <img
-                src="wi8.jpg"
-                alt=""
-                class="img-fluid"
-              />
+            <a class="img-fluid glightbox" href="wi8.jpg">
+              <img src="wi8.jpg" alt="" class="img-fluid" />
             </a>
           </div>
         </div>
       </div>
-    <div class="b31">
-      <img src="bunga3.png" class="bunga31" alt="Bunga 31">
-    </div>
+      <div class="b31">
+        <img src="bunga3.png" class="bunga31" alt="Bunga 31" />
+      </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
     <script type="text/javascript">
       // Gallery glightbox
       const lightbox = GLightbox({
-          closeOnOutsideClick: false,
-          loop: true
+        closeOnOutsideClick: false,
+        loop: true,
       });
     </script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    ></script>
   </body>
-  </html>
+</html>
